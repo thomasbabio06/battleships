@@ -69,8 +69,8 @@ body {
     align-items: center;
     align-content: center;
     flex-direction: column;
-    border: 1px solid black;
-    width: 300px;
+    border: 3px solid rgb(199, 147, 17);
+    width: 175px;
     border-radius: 15px;
 }
 
@@ -557,7 +557,7 @@ body {
     justify-items: center;
     align-items: center;
     align-content: center;
-    gap: 250px;
+    gap: 100px;
 }
 
 .btn{
@@ -602,4 +602,3 @@ body {
 .btn:hover::before{
     height: 0%;
 }
-  
