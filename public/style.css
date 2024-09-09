@@ -33,23 +33,6 @@ body {
     opacity: .25;
 }
 
-.btn {
-    font-size: inherit;
-    background-color: goldenrod;
-    padding: .5em 1em;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: .2em;
-    color: black;
-    transition: color 1s ease;
-}
-
-.btn:hover, .btn:focus {
-    background-color: hsl(30, 100%, 40%);
-}
-
 .splash-btn {
     font-size: 2rem;
     margin-left: 2rem;
@@ -59,11 +42,36 @@ body {
     margin-left: 0;
 }
 
-.container {
+.container{
     display: flex;
     justify-content: center;
     width: 100%;
     color: goldenrod;
+}
+
+.containerUsuario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    gap: 150px;
+    font-size: 20px;
+}
+
+.containerUsuario .player{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 300px;
+    border-radius: 15px;
 }
 
 .container2{
@@ -259,14 +267,6 @@ body {
     background-color: white;
 }
 
-#rotate{
-    margin-left: 80px;
-}
-
-#start{
-    margin-left: 50px;
-}
-
 .boom::after {
     background-color: red;
 }
@@ -435,7 +435,7 @@ body {
 }
 
 .boton-splash:hover::before {
-    left: 0; /* Mueve el relleno a la vista */
+    left: 0;
     z-index: -1;
 }
 
@@ -447,7 +447,7 @@ body {
 
 .boton-splash span {
     position: relative;
-    z-index: 1; /* Asegura que el texto esté por encima del pseudo-elemento */
+    z-index: 1; 
 
 }
 
@@ -550,6 +550,56 @@ body {
     transform: rotate(90deg);
 }
 
-.bodyMultiplayer img{
-    brightness: (30%);
+.setup-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    gap: 250px;
 }
+
+.btn{
+    border: 2px solid #ffffff;
+    background: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.btn:hover{
+    color: #ffffff;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #3498db;
+    z-index: -1;
+    transition: 0.8s;
+}
+
+.btn::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+.btn::before{
+    height: 180%;
+}
+
+.btn:hover::before{
+    height: 0%;
+}
+  
