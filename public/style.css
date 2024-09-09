@@ -549,3 +549,7 @@ body {
 .carrier-container-vertical {
     transform: rotate(90deg);
 }
+
+.bodyMultiplayer img{
+    brightness: (30%);
+}
