@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Battle Ships</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body class="bodyIndex">
+    <div class="container-splash2">
+        <h1 class="border">Battleship</h1>
+        <h1 class="wave">Battleship</h1>
+    </div>
+    <div class="boton">
+        <a href="multiplayer.html" class="boton-splash">Multiplayer</a>
+    </div>
+    <script>
+        const botonSplash = document.querySelector('.boton-splash');
+        const h1Wave = document.querySelector('.wave');
+
+        botonSplash.addEventListener('mouseover', () => {
+            h1Wave.style.color = 'red';
+        });
+
+        botonSplash.addEventListener('mouseout', () => {
+            h1Wave.style.color = '';
+            h1Border.style.color = '';
+        });
+    </script>
+</body>
+
+</html>
